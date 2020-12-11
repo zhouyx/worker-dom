@@ -74,7 +74,7 @@ export class WorkerContext {
           [${window.innerWidth}, ${window.innerHeight}],
           ${JSON.stringify(localStorageInit)},
           ${JSON.stringify(sessionStorageInit)}
-        );
+        );s
         workerDOM.document[${TransferrableKeys.observe}](this);
         Object.keys(workerDOM).forEach(function(k){self[k]=workerDOM[k]});
       }).call(self);
